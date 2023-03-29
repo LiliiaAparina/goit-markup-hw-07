@@ -1,0 +1,55 @@
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .customers,
+    .team,
+    .principles,
+    .services {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    .principles-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .principles-list .title {
+        margin-bottom: 8px;
+
+        color: var(--title-text-color);
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .principles-description {
+        font-weight: 400;
+    }
+
+    .principles-item::before {
+        display: block;
+    }
+
+    .services {
+        display: block;
+        padding-top: 0;
+    }
+
+    .team-item {
+        width: calc((100% - 72px) / 4)
+    }
+
+    .customers-list {
+        display: flex;
+        gap: 24px;
+    }
+
+    .customers-item {
+        width: calc((100% - 120px) / 6);
+    }
+
+}
