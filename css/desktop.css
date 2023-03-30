@@ -5,6 +5,28 @@
         padding-right: 15px;
     }
 
+    .main-button {
+        cursor: pointer;
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: var(--transition-timing-function);
+    }
+
+
+    .main-button:hover,
+    .main-button:focus {
+        background-color: var(--active-color);
+    }
+
+    .hero {
+        padding-bottom: 188px;
+        padding-top: 188px;
+    }
+
+    .hero-title {
+        margin-bottom: 48px;
+    }
+
     .customers,
     .team,
     .principles,
@@ -43,13 +65,93 @@
         width: calc((100% - 72px) / 4)
     }
 
+    .team-link-icon {
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: var(--transition-timing-function);
+    }
+
+    .team-link-icon:hover,
+    .team-link-icon:focus {
+        background-color: var(--active-color);
+    }
+
     .customers-list {
-        display: flex;
-        gap: 24px;
+        /* display: flex; */
+        /* gap: 24px; */
     }
 
     .customers-item {
         width: calc((100% - 120px) / 6);
+    }
+
+    .customers-link {
+        transition-property: color, border-color;
+        transition-duration: 250ms;
+        transition-timing-function: var(--transition-timing-function);
+    }
+
+    .customers-link:hover,
+    .customers-link:focus {
+        color: var(--active-color);
+        border-color: var(--active-color);
+    }
+
+    .modal-button {
+        cursor: pointer;
+
+        transition-property: background-color, color;
+        transition-duration: 250ms;
+        transition-timing-function: var(--transition-timing-function);
+    }
+
+    .modal-button:hover,
+    .modal-button:focus {
+        background-color: var(--active-color);
+        color: var(--primary-white-color);
+    }
+
+    .form-input {
+        transition-property: border-color, opacity;
+        transition-duration: 250ms;
+        transition-timing-function: var(--transition-timing-function);
+    }
+
+    .form-input:focus {
+        border-color: var(--active-color);
+        opacity: 1;
+    }
+
+    .form-icon {
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: var(--transition-timing-function);
+    }
+
+    .form-input:focus+.form-icon {
+        fill: var(--active-color);
+    }
+
+    .form-textarea {
+        transition-property: border-color, opacity;
+        transition-duration: 250ms;
+        transition-timing-function: var(--transition-timing-function);
+    }
+
+    .form-textarea::placeholder {
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: var(--transition-timing-function);
+    }
+
+    .form-textarea:focus {
+        border-color: var(--active-color);
+        opacity: 1;
+    }
+
+    .form-textarea:focus::placeholder {
+        color: var(--active-color);
+        opacity: 0.4;
     }
 
 }

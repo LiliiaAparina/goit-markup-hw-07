@@ -2,4 +2,9 @@
     .container {
         max-width: 412px;
     }
+
+    .modal {
+        min-width: 392px;
+        width: 0;
+    }
 }
