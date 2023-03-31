@@ -108,6 +108,7 @@ p {
 
 .header {
     border-bottom: 1px solid var(--accent-color);
+
 }
 
 /* Logo */
@@ -115,7 +116,7 @@ p {
 .logo {
     display: block;
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 22px;
 
     color: var(--title-text-color);
     font-family: 'Raleway', sans-serif;
@@ -139,7 +140,8 @@ p {
 }
 
 .site-nav {
-    display: flex;
+    display: none;
+
 
     align-items: center;
 }
@@ -189,7 +191,7 @@ p {
 /* Contacts */
 
 .contacts {
-    display: flex;
+    display: none;
     margin-left: auto;
     align-items: center;
 }
