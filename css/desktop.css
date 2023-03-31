@@ -97,6 +97,98 @@
         border-color: var(--active-color);
     }
 
+
+
+
+    .footer {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .footer-container {
+        /* display: flex; */
+        /* flex-wrap: wrap;
+        align-items: baseline; */
+    }
+
+    .footer-content {
+        /* max-width: 264px; */
+        margin-right: 120px;
+        margin-bottom: 0px;
+    }
+
+    .footer-social {
+        margin-right: 80px;
+        margin-bottom: 0px;
+    }
+
+    .footer-link-icon {
+        transition-property: background-color;
+        transition-duration: 250ms;
+        transition-timing-function: var(--transition-timing-function);
+    }
+
+    .footer-link-icon:hover,
+    .footer-link-icon:focus {
+        background-color: var(--active-accent-color);
+    }
+
+    .footer-form {
+        /* display: flex;
+        flex-direction: column; */
+        max-width: 453px;
+    }
+
+    /* .footer-form-label {
+        margin-bottom: 16px;
+
+        font-weight: 500;
+        color: var(--primary-white-color);
+    } */
+
+    .footer-form-thumb {
+        /* display: flex; */
+        /* gap: 24px; */
+    }
+
+    .footer-form-input {
+        /* max-width: 264px; */
+        height: 40px;
+        border: 1px solid var(--primary-white-color);
+
+        transition: border-color;
+        transition-duration: 250ms;
+        transition-timing-function: var(--transition-timing-function);
+    }
+
+    .footer-form-input::placeholder {
+        opacity: 1;
+        /* font-size: 12px;
+        line-height: 2;
+        letter-spacing: 0.04em;
+        color: var(--primary-white-color); */
+
+        transition: color;
+        transition-duration: 250ms;
+        transition-timing-function: var(--transition-timing-function);
+    }
+
+    .footer-form-input:focus {
+        border-color: var(--active-color);
+    }
+
+    .footer-form-input:focus::placeholder {
+        color: var(--active-color);
+    }
+
+    /* .footer-form-button {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding: 8px 24px;
+        box-shadow: none;
+    } */
+
     .modal-button {
         cursor: pointer;
 
