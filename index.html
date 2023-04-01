@@ -24,13 +24,121 @@
     <!-- Site header -->
     <header class="header">
       <div class="container main-nav">
-        <a href="./index.html" class="logo link"
-          ><span class="logo-accent">Web</span>Studio</a
-        >
-        <nav class="site-nav">
-          <!-- <a href="./index.html" class="logo link"
+        <div class="main-nav-mobile">
+          <a href="./index.html" class="logo link"
             ><span class="logo-accent">Web</span>Studio</a
-          > -->
+          >
+
+          <button
+            type="button"
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg class="toggle-icon">
+              <use href="./images/symbol-defs.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button type="button" class="modal-button menu-button js-close-menu">
+            <svg class="modal-button-icon">
+              <use href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <!-- <button class="menu-button js-close-menu">
+            <svg
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+              width="8"
+              height="8"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button> -->
+
+          <ul class="mobile-menu list">
+            <li>
+              <a
+                href="./index.html"
+                class="mobile-menu-link mobile-menu-current link"
+                >Studio</a
+              >
+            </li>
+            <li>
+              <a href="./portfolio.html" class="mobile-menu-link link"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <p class="mobile-menu-accent">Contacts</p>
+            </li>
+          </ul>
+          <div class="mobile-menu-contacts-wrap">
+            <ul class="mobile-menu-contacts list">
+              <li>
+                <a href="tel:+110001111111" class="link menu-tel"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="link menu-email"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="team-list-icon menu-list-icon list">
+              <li class="team-item-icon">
+                <a href="" class="team-link-icon link">
+                  <svg class="mobile-icon">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-item-icon">
+                <a href="" class="team-link-icon link">
+                  <svg class="mobile-icon">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-item-icon">
+                <a href="" class="team-link-icon link">
+                  <svg class="mobile-icon">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-item-icon">
+                <a href="" class="team-link-icon link">
+                  <svg class="mobile-icon">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <script
+          defer
+          src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+          integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+          crossorigin="anonymous"
+        ></script>
+        <script defer src="js/mobile-menu.js"></script>
+
+        <nav class="site-nav">
+          <a href="./index.html" class="logo link"
+            ><span class="logo-accent">Web</span>Studio</a
+          >
           <ul class="site-nav-list list">
             <li class="site-nav-item">
               <a href="./index.html" class="site-nav-link link current"
@@ -504,14 +612,16 @@
             class="form-input-checkbox visually-hidden"
           />
           <label for="policy" class="form-label-checkbox">
-            <span>
+            <span class="checkbox">
               <svg class="form-checkbox-icon">
                 <use href="./images/symbol-defs.svg#icon-check"></use>
               </svg>
             </span>
-            I accept the terms and conditions of the
-            <a href="" class="form-link-checkbox">Privacy Policy</a></label
-          >
+            <span>
+              I accept the terms and conditions of the
+              <a href="" class="form-link-checkbox">Privacy Policy</a></span
+            >
+          </label>
           <button type="submit" class="main-button main-button-form">
             Send
           </button>
