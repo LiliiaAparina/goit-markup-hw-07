@@ -4,7 +4,7 @@
     }
 
     .modal {
-        min-width: 392px;
         width: 0%;
+        min-width: 392px;
     }
 }
