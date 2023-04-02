@@ -704,9 +704,9 @@ p {
     transform: translate(-50%, -50%) scale(1);
 
     width: 90%;
-    overflow-y: auto;
-    max-height: 586px;
-    height: 90%;
+    height: auto;
+    /* max-height: 586px; */
+    /* height: 90%; */
     border-radius: 4px;
     padding: 24px 16px;
 
@@ -936,13 +936,6 @@ p {
     color: var(--active-color);
 }
 
-.mobile-menu-accent {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.4;
-    color: var(--active-color);
-}
-
 .mobile-menu-contacts-wrap {
     margin-top: auto;
 }
@@ -956,7 +949,7 @@ p {
 
 .menu-tel {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 25px;
     line-height: 1.4;
     color: var(--brand-color);
     text-transform: capitalize;
@@ -971,7 +964,7 @@ p {
 
 .menu-list-icon {
     flex-wrap: wrap;
-    gap: 56px;
+    gap: 25px;
 }
 
 .mobile-icon {

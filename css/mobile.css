@@ -6,5 +6,14 @@
     .modal {
         width: 0%;
         min-width: 392px;
+        min-height: 586px;
+    }
+
+    .menu-tel {
+        font-size: 36px;
+    }
+
+    .menu-list-icon {
+        gap: 56px;
     }
 }
